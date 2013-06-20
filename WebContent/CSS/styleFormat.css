@@ -1,0 +1,1009 @@
+/*
+	Author: Dung Harry
+	Date Created: 2nd, May, 2013
+*/
+
+/*Common style*/
+
+* {
+	font-family: Times New Roman;
+	font-size: 18px;
+}
+
+html {
+	background-color: #eee;
+}
+
+.hide {
+	display: none;
+}
+
+.shadown {
+	-webkit-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    -moz-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    -o-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+}
+/*Make style for Login part*/
+
+.divLogin {
+	width: 1000px;
+	margin: 0 auto;
+	height: 660px;
+	background-color: white;
+	border-radius: 5px;
+	-webkit-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    -moz-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    -o-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+}
+
+.divTitleLog {
+	margin: 0 auto;
+	width: 530px;
+	height: 266px;
+	padding-left: 20px;
+	background-image: url("../Images/Library.png");
+	background-repeat: no-repeat;
+}
+
+.divTitleLog:HOVER {
+	opacity: 0.8;
+}
+
+.divFormLog {
+	margin: 0 auto;
+	width: 400px;
+	margin-top: 80px;
+	padding-left: 30px;
+}
+
+.divFormLog table tbody tr td {
+	padding: 5px;
+}
+
+.divFormLog p {
+	font-size: 25px;
+	font-stretch: semi-condensed;
+	font-weight: bold;
+}
+
+.notifyLogin {
+	display: none;
+	font-size: 15px;
+	color: red;
+}
+
+.errorLogin {
+	padding-left: 80px;
+	font-size: 20px;
+	color: red;
+}
+/*Style for main part*/
+/*Create style for head tab*/
+
+.tabTop {
+	width: 101.4%;
+	position: fixed;
+	margin: -15px;
+	padding: 10px 0 0 0;
+	height: 35px;
+	background-color: rgb(152, 230, 239);
+	z-index: 1000;
+}
+
+.tabTop div {
+	display: block;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.topInner1 {
+	float: left;
+	margin-left: 165px;
+}
+
+.topInner5 {
+	float: left;
+	position: absolute;
+	margin-left: 525px;
+	margin-top: 3px;
+}
+
+.topInner5:HOVER {
+	opacity: 0.8;
+}
+
+.topInner2 {
+	float: right;
+	border-right: #eee solid 0.5px;
+	border-left: #eee solid 0.5px;
+}
+
+.topInner3 {
+	float: right;
+	min-width: 50px;
+	border-right: #eee solid 0.5px;
+	border-left: #eee solid 0.5px;
+}
+
+.topInner4 {
+	float: right;
+	margin-right: 185px;
+	border-right: #eee solid 0.5px;
+	border-left: #eee solid 0.5px;
+}
+
+.tabTop a {
+	color: green;
+	text-decoration: none;
+	text-shadow: green;
+	font-weight: bold;
+	text-align: justify;
+}
+
+.tabTop a:HOVER {
+	color: blue;
+	cursor: pointer;
+}
+/*Create style for body part*/
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #eee;
+	min-height: 1500px;
+	padding-top: 30px;
+}
+
+.slideTop {
+	width: 1000px;
+	height: 370px;
+	border-radius: 10px;
+	margin-bottom: -20px;
+	z-index: 90;
+}
+
+.slideTop img {
+	border-radius: 0 0 10px 10px;
+	height:  370px;
+	width: 1000px;
+}
+/*Format for selections of Librarian*/
+
+#divSelections {
+	width: 200px;
+	position: fixed;
+	z-index: 1500;
+	display: none;
+	top: 37px;
+	left: 840px;
+	background-color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#divSelections div {
+	display: block;
+	padding: 10px 0;
+	color: green;
+	border-bottom: #eee solid 0.5px;
+	border-top: #eee solid 0.5px;
+}
+#divSelections div:HOVER {
+	background-color: rgb(152, 230, 239);
+	color: blue;
+}
+/*Format for chooser tag*/
+
+.menuChooser {
+	width: 800px;
+	height: 80px;
+	position: absolute;
+	margin-left: 100px;
+	background-color: rgb(152, 230, 239);
+	z-index: 100;
+	border-radius: 30px;
+}
+
+.chooserInner {
+	height: 40px;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding: 0 0 0 20px;
+}
+
+.chooserInner div {
+	
+	display: block;
+	text-align: center;
+	border-left: #eee solid 1px;
+	border-right: #eee solid 1px;
+	padding: 0 15px;
+	float: left;
+}
+
+.chooserInner a {
+	font-size: 30px;
+	font-weight: bold;
+	color: green;
+}
+
+.chooserInner a:HOVER {
+	cursor: pointer;
+	color: blue;
+}
+/*Format for main part*/
+
+.mainPart {
+	width: 1000px;
+	min-height: 1500px;
+	margin-top: 60px;
+}
+/*Format for slide left*/
+
+.slideLeft {
+	float: left;
+	background-color: #eee;
+	width: 300px;
+}
+
+.slideLeft div {
+	background-color: white;
+	width: 285px;
+	height: 370px;
+	border-radius: 5px;
+	margin: 0 auto 10px;
+	display: block;
+	text-align: center;
+	-webkit-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    -moz-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    -o-box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+    box-shadow:rgba(0,0,0,0.4) 0px 0px 10px;
+}
+
+.slideLeft div img {
+	width: 285px;
+	height: 370px;
+	border-radius: 5px;
+}
+/*Format for content*/
+
+.content {
+	float: left;
+	background-color: rgb(215, 253, 167);
+	height: 1520px;
+	width: 700px;
+	border-radius: 30px 30px 5px 5px;
+	padding-top: 30px;
+}
+
+.content > div {
+	width: 685px;
+	margin: 0 auto;
+}
+/*Format for footer*/
+
+.copyright {
+	float: left;
+	width: 1000px;
+	height: 150px;
+	border-radius: 30px;
+	margin: 10px 0;
+	background-color: rgb(152, 230, 239);
+}
+
+.copyright > div {
+	float: left;
+	height: 100px;
+	margin-top: 25px;
+}
+
+.copyright div {
+	font-size: 15px;
+}
+
+.logoFooter {
+	width: 500px;
+	border-right: #eee solid 1px;
+	padding-top: 25px;
+	margin-left: 50px;
+}
+
+.logoContent > div {
+	float: left;
+}
+
+.logoImage {
+	width: 50px;
+	height: 50px;
+}
+
+.copyrightDescript {
+	padding: 7px 0 0 15px;
+}
+
+.copyrightDescipt > div {
+	width: 400px;
+	margin-left: 5px;
+}
+
+.contactFooter {
+	width: 400px;
+	padding: 15px;
+}
+
+.contactContent div {
+	padding: 2px;
+	border-bottom: #eee solid 0.2px;
+	width: 250px;
+}
+/*Format for introduction*/
+
+.content > div {
+	margin: 0 auto;
+	width: 685px;
+	height: 1520px;
+}
+
+#introductWrapper > div {
+	height: 1520px;
+	float: left;
+}
+
+.introChooser {
+	padding: 0 15px;
+	width: 150px;
+	border-right: rgb(156, 176, 130) solid 2.5px; 
+}
+
+.introChooser div {
+	margin: 5px 0;
+	border-radius: 5px;
+	padding: 5px;
+	border-bottom: rgb(146, 176, 106) solid 1.5px;
+}
+
+.chooserEffectClick {
+	background-color: rgb(152, 230, 239);
+	color: blue;
+}
+
+.introChooser div:HOVER {
+	background-color: rgb(152, 230, 239);
+	cursor: pointer;
+	color: blue;
+}
+
+.introChooser a {
+	font-size: 30px;
+}
+
+#introContent {
+	width: 501px;
+	border-left: rgb(156, 176, 130) solid 2.5px;
+	overflow-y: auto;
+}
+
+#introContent > div {
+	width: 480px;
+	margin: 0 auto;
+}
+
+.introductCopyright {
+	font-size: 9px;
+}
+
+.introductCopyright div {
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+	border-bottom: #ddd solid 1px; 
+}
+/*Format style for profile or informations of users*/
+
+#userInforsPart {
+	padding: 0 10px;
+	overflow-y: auto;
+	min-height: 1000px;
+}
+
+.userInforsWrapper {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.userInforsWrapper > div {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.topicInfors > div {
+	width: 100%;
+	margin-bottom: 15px;
+	min-height: 40px;
+	border-bottom: rgb(156, 176, 130) solid 1px;
+}
+
+.topicInfors > div:HOVER {
+	opacity: 0.7;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+    -moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+    -o-box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+    box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+}
+
+.edit {
+	background-image: url("../Images/Edit.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 12.5px;
+}
+
+.apply {
+	background-image: url("../Images/Apply.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 12.5px;
+}
+
+.apply:HOVER {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.edit:HOVER {
+	opacity: 0.7;
+	cursor: pointer;
+}
+/*Format for manager of Librarian*/
+
+#managerWrapper {
+	width: 100%;
+	margin: 0 auto;
+	height: 1520px;
+}
+
+#dropdownManagerChooser {
+	position: absolute;
+	z-index: 500;
+	margin-left: 25px;
+	border-radius: 5px;
+}
+
+#dropdownManagerChooser:HOVER {
+	cursor: pointer;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    -moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    -o-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+}
+
+#divManagerChooserWrapper {
+	position: absolute;
+	z-index: 500;
+	margin: 35px 0 0 10px;
+	background-color: white;
+	width: 230px;
+	border-radius: 5px;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    -moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    -o-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+}
+
+.chooserManagerInner {
+	margin: 0 30px;
+}
+
+.chooserManagerInner > div {
+	margin: 5px 0;
+	padding: 5px 0 2.5px 0;
+	border-radius: 10px;
+	border-bottom: rgb(189, 231, 112) solid 1px;
+}
+
+.chooserManagerInner > div:HOVER {
+	cursor: pointer;
+	background-color: rgb(189, 231, 112);
+}
+
+.divManagerContentWrapper {
+	width: 695px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-left: 2.5px;
+	height: 1490px;
+	overflow-y: auto;
+	position: absolute;
+	z-index: 400px;
+}
+
+.divManagerContentWrapper > div {
+	width: 100%;
+	min-height: 1400px;
+	margin: 0 auto;
+}
+
+.divManagerContentWrapper > div > div {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 1000px;
+}
+
+.addUserWrapper {
+	width: 80%;
+	margin: 0 auto;
+	border-left: rgb(189, 231, 112) solid 1px;
+	border-right: rgb(189, 231, 112) solid 1px;
+}
+
+.addUserWrapper div {
+	margin: 0 30px;
+	padding: 10px 0px 5px 10px;
+	border-radius: 5px;
+	border-bottom: rgb(189, 231, 112) solid 1px;
+}
+
+.addUserWrapper div:HOVER {
+	opacity: 0.7;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    -moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    -o-box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+    box-shadow:rgba(0,0,0,0.2) 0px 0px 10px;
+}
+
+.addUserWrapper table p {
+	color: red;
+	font-size: 15px;
+	margin: 10px 0 5px 10px;
+}
+
+#submitUserInsertion:HOVER {
+	cursor: pointer;
+}
+/*Format for update book manager*/
+
+#managerContent2 {
+	width: 100%;
+	min-height: 1480px;
+}
+
+#managerContent2 > div {
+	width: 100%;
+	min-height: 1480px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#managerContent2 > div > div {
+	float: left;
+}
+
+.bookUpdateChooserManager {
+	width: 150px;
+	min-height: 1460px;
+	padding: 10px 5px;
+	border-right: rgb(156, 176, 130) solid 2.5px;
+}
+
+.bookUpdateChooserManager > div {
+	margin: 5px 10px 10px 10px;
+}
+
+.bookUpdateChooserManager > div > div {
+	border-radius: 5px;
+	padding: 10px 0 5px 0;
+	margin-bottom: 5px;
+	border-bottom: rgb(179, 231, 112) solid 1px; 
+}
+
+.bookUpdateChooserManager > div > div:HOVER {
+	background-color: rgb(179, 231, 112);
+	cursor: pointer;
+}
+
+.bookUpdateChooserManager a {
+	font-size: 30px;
+}
+
+.bookUpdateContentManager {
+	width: 515px;
+	margin: 0 auto;
+	height: 1480px;
+	overflow-y: auto;
+	border-left: rgb(156, 176, 130) solid 2.5px;
+}
+
+.bookUpdateContentManager > div {
+	margin: 5px 10px 0 10px;
+	min-height: 1200px;
+}
+
+#updateContentChooser1 > div{
+	width: 370px;
+	margin: 0 auto;
+	padding: 0 15px;
+	border-left: rgb(156, 176, 130) solid 1px;
+	border-right: rgb(156, 176, 130) solid 1px;
+}
+
+.wrapperEachElement {
+	border: 15px 0 5px 0;
+	border-bottom: rgb(156, 176, 130) solid 1px;
+	margin-top: 20px;
+}
+
+.wrapperEachElement p {
+	font-size: 15px;
+	padding-left: 10px 0 5px 15px;
+	color: red;
+}
+
+.wrapperEachElement:HOVER {
+	opacity: 0.8;
+	border-radius: 5px;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+    -moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+    -o-box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+    box-shadow:rgba(0,0,0,0.2) 0px 0px 4px;
+}
+
+#submitInsertBookManager:HOVER {
+	cursor: pointer;
+}
+
+.chooserEffectClickBook {
+	background-color: rgb(179, 231, 112);
+}
+
+/*Format for edit book manager*/
+
+.updateEditContentWrapperResult {
+	width: 100%;
+	padding: 5px;
+	margin: 0 auto;
+	min-height: 800px;
+}
+
+.updateEditContentWrapperResult > div > div {
+	float: left;
+}
+
+.updateEditContentWrapperResult > div {
+	width: 100%;
+	float: none;
+	border-bottom: rgb(179, 231, 112) solid 1px;
+}
+
+.updateEditContentWrapperResult > div:HOVER {
+	background-color: rgb(203, 237, 159);
+}
+
+.firstEditContentBookManager {
+	min-height: 190px;
+}
+
+.firstEditContentBookManager > div {
+	min-height: 190px;
+}
+
+.leftHandUpdateEditContentWrapper {
+	width: 143px;
+	min-height: 80px;
+	border-right: rgb(179, 231, 112) solid 1px;
+}
+
+.leftHandUpdateEditContentWrapper > img {
+	width: 143px;
+	height: 190px;
+}
+
+.rightHandUpdateEditContentWrapper {
+	width: 320px;
+	min-height: 80px;
+	padding: 10px 0 5px 10px;
+}
+
+.rightHandUpdateEditContentWrapper > div {
+	width: 100%;
+	min-height: 80px;
+}
+
+.alignMainEditBookManager {
+	min-height: 80px;
+}
+
+.iconShowEditPart {
+	margin: 0 auto;
+	width: 80px;
+	height: 20px;
+}
+
+.iconShowEditPart img:HOVER {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.applyFieldUpdateBookManager {
+	margin: 0 auto;
+	width: 80px;
+	height: 20px;
+}
+
+.applyFieldUpdateBookManager img:HOVER {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#submitEditPartBookManager:HOVER {
+	cursor: pointer;
+}
+/*Format for check Book part*/
+
+.innerWrapperCheckBook {
+	width: 685px;
+	height: 1500px;
+	margin: 0 auto;
+}
+
+.titleAreaCheckBook {
+	width: 685px;
+	height: 100px;
+	border-radius: 15px;
+	border-bottom: rgb(156, 176, 130) solid 1px;
+}
+
+.formAreaCheckBook {
+	width: 685px;
+	height: 80px;
+}
+
+#submitButtonCheckBook:HOVER {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+#textBookCodeCheckBook:HOVER {
+	opacity: 0.8;
+}
+
+.resultAreaCheckBook {
+	width: 685px;
+	height: 1290px;
+	overflow-y: auto;
+}
+
+.resultAreaCheckBook > div {
+	width: 665px;
+	min-height: 1000px;
+	border: 0 auto;
+}
+
+.wrapperRealResultCheckBook > div > div {
+	border-bottom: rgb(156, 176, 130) solid 1px;
+}
+
+.wrapperRealResultCheckBook > div > div:HOVER {
+	opacity: 0.6;
+}
+
+.eachElementCheckBook {
+	width: 285px;
+	min-height: 80px;
+	border: 0 5px;
+	border-right: rgb(156, 176, 130) solid 1px;
+}
+
+.eachElementCheckBook img {
+	width: 285px;
+	height: 370px;
+}
+/*Format for search part*/
+
+.innerWrapperSearchBook {
+	width: 685px;
+	height: 1395px;
+	overflow-y: auto;
+}
+
+.innerWrapperSearchBook > div {
+	width: 665px;
+	min-height: 1000px;
+	border: 0 auto;
+}
+
+.titleResultSearchBookPart {
+	width: 685px;
+	height: 100px;
+	border-radius: 15px;
+	border-bottom: rgb(156, 176, 130) solid 1px;
+}
+/*Format for place book part*/
+
+.innerWrapperPlaceBookPart {
+	width: 685px;
+	height: 1510px;
+}
+
+.titlePlaceBookPart {
+	width: 685px;
+	height: 100px;
+	border-radius: 15px;
+	border-bottom: rgb(156, 176, 130) solid 1px;
+}
+
+.formPlaceBookPart {
+	width: 685px;
+	height: 100px;
+	padding-top: 20px;
+}
+
+#submitPlaceBookPart:HOVER {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+#textPlaceBookPart:HOVER {
+	opacity: 0.6;
+}
+
+.mainPlaceBookPart {
+	width: 685px;
+	height: 1250px;
+	overflow-y: auto;
+}
+
+.mainPlaceBookPart > div {
+	width: 670px;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+
+.resultSuccessPlaceBook {
+	padding: 10px;
+}
+
+.resultSuccessPlaceBook > div > div {
+	margin-bottom: 10px;
+	border-bottom: rgb(156, 176, 130) solid 2px;
+}
+
+.resultSuccessPlaceBook > div > div:HOVER {
+	opacity: 0.6;
+}
+
+.styleLeftSideResultPlaceBook {
+	text-align: center;
+	min-height: 80px;
+	border-right: rgb(156, 176, 130) solid 1px;
+	width: 200px;
+}
+/*Format for part accept lending book*/
+
+#managerContent3 > div {
+	width: 100%;
+	height: 1470px;
+}
+
+.acceptLendingBookTitle {
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 15px;
+	border-bottom: rgb(156, 176, 130) solid 1px;
+}
+
+.acceptLendingBookContent {
+	width: 100%;
+	height: 1370px;
+	margin: 0 auto;
+}
+
+.acceptLendingBookContent > div {
+	float: left;
+}
+
+.menuAcceptLendingBookContent {
+	width: 30%;
+	min-height: 1000px;
+}
+
+.mainAcceptLendingBookContent {
+	width: 69.5%;
+	height: 1370px;
+	border-left: rgb(156, 176, 130) solid 2px;
+	margin: 0 auto;
+	overflow-y: auto;
+}
+
+.menuAcceptLendingBookContent > div {
+	margin: 10px 5px 0 5px;
+}
+
+.menuAcceptLendingBookContent > div > div {
+	border-bottom: rgb(179, 231, 112) solid 1px;
+	border-radius: 5px;
+	padding: 10px 0 5px 0;
+}
+
+.menuAcceptLendingBookContent > div > div:HOVER {
+	background-color: rgb(179, 231, 112);
+	cursor: pointer;
+}
+
+.menuAcceptLendingBookContent a {
+	font-size: 30px;
+}
+
+.formCheckAcceptLendingBookContent {
+	width: 98%;
+	height: 100px;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+
+.formCheckAcceptLendingBookContent input:HOVER {
+	opacity: 0.6;
+}
+
+#allowAcceptLendingThisBook:HOVER {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#submitToLendingBookController {
+	cursor: pointer;
+}
+
+.formNoRegisterLendingBookContent {
+	width: 98%;
+	min-height: 100px;
+	margin: 0 auto;
+}
+
+.resultNoRegisterLendingBookContent {
+	min-height: 700px;
+	width: 98%;
+	margin: 0 auto;
+}
+/*Format for pay book part*/
+
+.titlePayBookPart {
+	width: 100%;
+	height: 100px;
+	border-radius: 15px;
+	border-bottom: rgb(156, 176, 130) solid 1px;
+}
+
+.contentPayBookPart {
+	width: 100%;
+	height: 1370px;
+	overflow-y: auto;
+}
+
+.formContentPayBook {
+	width: 98%;
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.formContentPayBook input:HOVER {
+	opacity: 0.7;
+}
+
+#submitPayBookPart:HOVER {
+	cursor: pointer;
+}
+
+.resultContentPayBook {
+	width: 98%;
+	min-height: 800px;
+	margin: 0 auto;
+}
+
+#submitToLendingBookController {
+	cursor: pointer;
+	opacity: 0.6;
+}
